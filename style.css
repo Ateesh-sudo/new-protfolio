@@ -1820,28 +1820,30 @@ nav .container .logo-text span{
 
 .footer-social {
     display: flex;
-    align-items: center;
-    gap: 18px;
+    gap: 16px;
+    position: relative;
+    z-index: 1000;
 }
 
-
 .footer-social a {
+    display: inline-block;
+    position: relative;
+    z-index: 1001;
+
     color: #856088;
-
     font-size: 17px;
-
     text-decoration: none;
+
+    cursor: pointer;
+    pointer-events: auto;
 
     transition: all 0.3s ease;
 }
 
-
 .footer-social a:hover {
     color: #856088;
-
     transform: translateY(-3px);
 }
-
 
 /* ================= MOBILE ================= */
 
@@ -1853,11 +1855,8 @@ nav .container .logo-text span{
 
     .footer-content {
         flex-direction: column;
-
         justify-content: center;
-
         gap: 12px;
-
         text-align: center;
     }
 
@@ -1868,8 +1867,8 @@ nav .container .logo-text span{
     .footer-social {
         gap: 16px;
     }
-
 }
+
 
 
 
